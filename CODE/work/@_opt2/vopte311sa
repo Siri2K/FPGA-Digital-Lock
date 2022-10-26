@@ -1,0 +1,59 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/s/s_anagal/COEN313/Project/CODE
+T_opt
+Z1 VgMYLg_=XXMW9MPJSO]c0k0
+Z2 04 9 9 work comb_lock behaviour 1
+Z3 =1-3863bb49eb88-624e0168-f85b-37f1
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.6g;45
+Z7 d/home/s/s_anagal/COEN313/Project/CODE
+T_opt1
+Z8 V^RbfBgNBP4Q_^O=?4_bDI0
+R2
+Z9 =1-186024a254b7-624ee4b6-8077b-ea9
+R4
+Z10 n@_opt1
+R6
+R7
+T_opt2
+Z11 VD_cQnKaJ<XIeOZ40A3YL73
+R2
+Z12 =1-186024a254b7-624eff94-9bc62-d91
+R4
+Z13 n@_opt2
+R6
+R7
+Ecomb_lock
+Z14 w1649344259
+Z15 DPx17 __model_tech/ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z16 DPx17 __model_tech/ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z17 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+R7
+Z18 8project.vhd
+Z19 Fproject.vhd
+l0
+L7
+Z20 VbD_:HQgH`A5MS]kLo`0>D3
+Z21 OL;C;6.6g;45
+Z22 tExplicit 1
+Z23 !s100 n7]84MBXCYUQ1E1Ga6]hC3
+Abehaviour
+R15
+R16
+R17
+DEx46 /nfs/home/s/s_anagal/COEN313/Project/CODE/work 9 comb_lock 0 22 bD_:HQgH`A5MS]kLo`0>D3
+32
+Mx3 17 __model_tech/ieee 14 std_logic_1164
+Mx2 17 __model_tech/ieee 18 std_logic_unsigned
+Mx1 17 __model_tech/ieee 15 std_logic_arith
+l22
+L18
+Z24 VD?6MJHjJ@SF6m9k0Ehh0D2
+R21
+R22
+Z25 !s100 7XCJWf8F7jZhR0PR;f<eZ2

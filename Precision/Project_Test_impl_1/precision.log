@@ -1,0 +1,79 @@
+# Info: [9566]: Logging project transcript to file /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test_impl_1/precision.log
+# Info: [9566]: Logging suppressed messages transcript to file /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test_impl_1/precision.log.suppressed
+# Info: [9550]: Activated implementation Project_Test_impl_1 in project /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test.psp.
+new_project -name Project_Test -folder "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision" -createimpl_name Project_Test_impl_1
+# COMMAND: add_input_file {../CODE/project.vhd}
+add_input_file {../CODE/project.vhd}
+# COMMAND: setup_design -manufacturer Xilinx -family "VIRTEX-II Pro" -part 2VP2fg256 -speed -7
+# Info: [15298]: Setting up the design to use synthesis library "xcv2p.syn"
+# Info: [575]: The global max fanout is currently set to 10000 for Xilinx - VIRTEX-II Pro.
+# Info: [15324]: Setting Part to: "2VP2fg256".
+# Info: [15325]: Setting Process to: "7".
+# Info: [7512]: The place and route tool for current technology is ISE.
+setup_design -manufacturer Xilinx -family "VIRTEX-II Pro" -part 2VP2fg256 -speed -7
+# COMMAND: setup_design -frequency 100 -max_fanout=10000
+# Info: [575]: The global max fanout is currently set to 10000 for Xilinx - VIRTEX-II Pro.
+setup_design -frequency 100 -max_fanout=10000
+# COMMAND: compile
+# Info: [3022]: Reading file: /CMC/tools/mentor/precision/Mgc_home/pkgs/psr/techlibs/xcv2p.syn.
+# Info: [634]: Loading library initialization file /CMC/tools/mentor/precision/Mgc_home/pkgs/psr/userware/xilinx_rename.tcl
+# Info: XILINX
+# Info: [40000]: vhdlorder, Release 2016a.7
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2016a.7
+# Info: [42502]: Analyzing input file "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/../CODE/project.vhd" ...
+# Info: [659]: Top module of the design is set to: comb_lock.
+# Info: [657]: Current working directory: /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test_impl_1.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2016a.7
+# Info: [40000]: Last compiled on Jun  2 2016 06:11:46
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2016a.7
+# Info: [40000]: Last compiled on Jun  2 2016 06:47:43
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.comb_lock(behaviour): Pre-processing...
+# Info: [45144]: Extracted FSM in module work.comb_lock(behaviour), with state variable = present_state[1:0], async set/reset state(s) = 01 , number of states = 4.
+# Info: [45144]: Preserving the original encoding in 4 state FSM
+# Info: [45144]: FSM: State encoding table.
+# Info: [40000]: FSM:	Index	     State Name	                            Literal	                      Encoding
+# Info: [40000]: FSM:	    0	           Idle	                                 00	                            00
+# Info: [40000]: FSM:	    1	          Lock1	                                 01	                            01
+# Info: [40000]: FSM:	    2	          Lock2	                                 10	                            10
+# Info: [40000]: FSM:	    3	          Lock3	                                 11	                            11
+# Info: [44523]: Root Module work.comb_lock(behaviour): Compiling...
+# Warning: [45784]: "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/../CODE/project.vhd", line 37: Module work.comb_lock(behaviour), Net(s) present_state[1:0], reset: Although this signal is not part of the sensitivity list of this block, it is being read. This may lead to simulation mismatch.
+# Info: [45193]: "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/../CODE/project.vhd", line 10: Net ld1 is unused after optimization
+# Info: [45193]: "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/../CODE/project.vhd", line 10: Net ld2 is unused after optimization
+# Info: [45205]: "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/../CODE/project.vhd", line 37: Module work.comb_lock(behaviour), Net(s) next_state[1:0]: Latch inferred.
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 69.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 4.0 secs.
+# Info: [657]: Current working directory: /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test_impl_1.
+# Info: [15330]: Doing rtl optimizations.
+# Info: [660]: Finished compiling design.
+compile
+# COMMAND: synthesize
+# Info: [657]: Current working directory: /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test_impl_1.
+# Info: [15002]: Optimizing design view:.work.comb_lock.behaviour
+# Info: [8048]: Added global buffer BUFGP for Port port:clk
+# Info: [3027]: Writing file: /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test_impl_1/comb_lock.edf.
+# Info: [3027]: Writing file: /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test_impl_1/comb_lock.ucf.
+# Info: [12045]: Starting timing reports generation...
+# Info: [12046]: Timing reports generation done.
+# Info: [12048]: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+# Info: [660]: Finished synthesizing design.
+# Info: [11019]: Total CPU time for synthesis: 0.2 s secs.
+# Info: [11020]: Overall running time for synthesis: 0.4 s secs.
+synthesize
+# COMMAND: save_project
+# Info: [9562]: Saved implementation Project_Test_impl_1 in project /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test.psp.
+save_project
+# COMMAND: save_project
+# Info: [9562]: Saved implementation Project_Test_impl_1 in project /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/Project_Test.psp.
+save_project
+# COMMAND: execute -cmd "lp -d xylograph /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/PrecisionSch19e7.3ps" -dir "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision"
+execute -cmd "lp -d xylograph /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/PrecisionSch19e7.3ps" -dir "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision"
+# COMMAND: execute -cmd "lp -d dprint_color /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/PrecisionSch19e7.4ps" -dir "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision"
+execute -cmd "lp -d dprint_color /run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision/PrecisionSch19e7.4ps" -dir "/run/media/s_anagal/EMTEC C450/Winter 2022/COEN 313/Project/Linux Files/Precision"
+# COMMAND: exit -force
